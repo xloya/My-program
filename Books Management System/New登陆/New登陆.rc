@@ -1,0 +1,612 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\New.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\New登陆.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于本系统"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "图书管理系统，2.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 238, 181
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "登录"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,49,142,50,14
+    PUSHBUTTON      "退出",IDCANCEL,117,142,50,14
+    LTEXT           "欢迎来到图书管理系统！",IDC_STATIC,23,23,76,8
+    LTEXT           "用户名",IDC_STATIC,40,61,22,8
+    LTEXT           "密码",IDC_STATIC,47,85,15,8
+    EDITTEXT        IDC_USERNAME,77,58,72,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,77,82,72,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "忘记密码",IDC_BUTTON1,168,82,50,14
+    CONTROL         "用户登录",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,62,119,37,10
+    CONTROL         "管理员登录",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,117,119,50,10
+END
+
+IDD_FIND DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "找回密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "找回",IDOK,149,132,50,14
+    PUSHBUTTON      "取消",IDCANCEL,221,132,50,14
+    LTEXT           "用户名",IDC_STATIC,34,51,25,8
+    LTEXT           "姓名",IDC_STATIC,42,102,17,8
+    LTEXT           "学号/ID",IDC_STATIC,32,76,27,8
+    EDITTEXT        IDC_USERNAME,94,48,94,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STDID,94,73,94,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STDNAME,94,99,94,14,ES_AUTOHSCROLL
+END
+
+IDD_STUDENT DIALOGEX 0, 0, 422, 265
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户界面"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,7,408,251
+END
+
+IDD_Admin DIALOGEX 0, 0, 439, 261
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理员界面"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_BUTTONS,7,7,425,247
+END
+
+IDD_DIALOG_USERINFO DIALOGEX 0, 0, 431, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,150,18,86,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_BUTTON1,258,18,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,36,46,355,101
+    LTEXT           "用户名：",IDC_STATIC,41,158,34,11
+    LTEXT           "学号：",IDC_STATIC,41,192,34,11
+    EDITTEXT        IDD_DIALOG_USER_NAME,83,157,108,13,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,41,209,34,11
+    LTEXT           "姓名：",IDC_STATIC,41,175,34,11
+    EDITTEXT        IDD_DIALOG_USER_USER,83,174,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_USER_ID,83,191,108,13,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_USER_PWD,83,208,108,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON2,259,173,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON3,259,192,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON4,259,211,50,14
+    COMBOBOX        IDC_COMBO1,79,18,48,118,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查找类型",IDC_STATIC,35,20,39,11
+    GROUPBOX        "",IDC_STATIC,30,147,176,81
+END
+
+IDD_DIALOG_SEARCH DIALOGEX 0, 0, 431, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,150,18,86,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_BUTTON1,258,18,50,14
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,36,46,355,171
+    PUSHBUTTON      "书号借书",IDC_BUTTON4,332,18,50,14
+    COMBOBOX        IDC_COMBO1,79,18,48,118,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查找类型",-1,35,20,39,11
+END
+
+IDD_DIALOG_RETURN DIALOGEX 0, 0, 415, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,107,52,145,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,26,76,364,135
+    PUSHBUTTON      "查找",IDC_BUTTON7,259,52,50,14
+    COMBOBOX        IDC_COMBO2,37,52,60,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "已借查询",IDC_STATIC,23,21,373,50
+    PUSHBUTTON      "书号还书",IDC_BUTTON1,322,52,50,14
+    LTEXT           "请输入所查询书籍的信息：",IDC_STATIC,39,37,111,8
+END
+
+IDD_DIALOG_LOANINFO DIALOGEX 0, 0, 415, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,78,53,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,217,53,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,29,122,339,84
+    EDITTEXT        IDC_EDIT3,340,53,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_BUTTON1,169,90,50,14
+    PUSHBUTTON      "查找",IDC_BUTTON6,306,89,50,14
+    PUSHBUTTON      "查找",IDC_BUTTON7,39,90,50,14
+    COMBOBOX        IDC_COMBO1,151,53,48,111,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,18,53,48,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "用户查询",IDC_STATIC,15,27,120,85
+    GROUPBOX        "书籍查询",IDC_STATIC,139,27,139,85
+    GROUPBOX        "日期查询",IDC_STATIC,281,27,115,85
+    COMBOBOX        IDC_COMBO3,286,55,48,120,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_BORROWHISTORY DIALOGEX 0, 0, 415, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        1011,132,52,109,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,29,82,339,118
+    PUSHBUTTON      "搜索",IDC_BUTTON7,262,53,50,14
+    COMBOBOX        IDC_COMBO2,60,53,53,96,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "请输入用户名进行搜索",-1,29,26,336,52
+END
+
+IDD_DIALOG_BOOKINFO DIALOGEX 0, 0, 407, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "查找",IDC_BUTTON1,291,18,50,14
+    EDITTEXT        IDC_EDIT1,186,18,68,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,29,42,331,89
+    LTEXT           "书籍名称：",IDC_STATIC,51,146,44,8
+    LTEXT           "作者：",IDC_STATIC,199,146,27,8
+    LTEXT           "ISBN：",IDC_STATIC,51,165,25,8
+    LTEXT           "唯一编号：",IDC_STATIC,199,165,44,8
+    LTEXT           "类型：",IDC_STATIC,51,184,27,8
+    EDITTEXT        IDD_DIALOG_BOOK_ISBN,89,163,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_BOOK_NAME,89,144,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_BOOK_PLACE,241,182,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_BOOK_TYPE,89,182,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_BOOK_AUTHOR,241,144,86,12,ES_AUTOHSCROLL
+    EDITTEXT        IDD_DIALOG_BOOK_NUMBER,241,163,86,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_BUTTON3,167,211,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON4,253,211,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON5,81,211,50,14
+    COMBOBOX        IDC_COMBO1,121,19,48,109,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查找类型",IDC_STATIC,55,20,39,11
+    LTEXT           "位置：",IDC_STATIC,199,184,27,8
+    GROUPBOX        "",IDC_STATIC,27,136,331,64
+END
+
+IDD_STDACCOUNTINFO DIALOGEX 0, 0, 351, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDD_DIALOG_ACCOUNT_PWD2,222,96,82,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_BUTTON1,210,122,50,14
+    LTEXT           "旧密码：",IDC_STATIC,182,73,35,8
+    LTEXT           "新密码：",IDC_STATIC,182,96,35,8
+    PUSHBUTTON      "注销",IDC_BUTTON2,136,178,50,14
+    EDITTEXT        IDD_DIALOG_ACCOUNT_PWD1,222,73,82,14,ES_AUTOHSCROLL
+    GROUPBOX        "密码修改",IDC_STATIC,168,32,149,136
+    GROUPBOX        "个人信息",IDC_STATIC,20,32,136,136
+    LTEXT           "姓名：",IDC_STATIC,34,73,27,8
+    EDITTEXT        IDD_DIALOG_ACCOUNT_NAME,69,73,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "用户名:",IDC_STATIC,34,122,30,8
+    LTEXT           "ID:",IDC_STATIC,34,96,18,9
+    EDITTEXT        IDD_DIALOG_ACCOUNT_ID,69,96,67,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDD_DIALOG_ACCOUNT_USER,69,122,67,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_ACCOUNTINFO DIALOGEX 0, 0, 351, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDD_DIALOG_ACCOUNT_PWD2,222,96,82,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDC_BUTTON1,210,122,50,14
+    LTEXT           "旧密码：",IDC_STATIC,182,73,35,8
+    LTEXT           "新密码：",IDC_STATIC,182,96,35,8
+    PUSHBUTTON      "注销",IDC_BUTTON2,136,178,50,14
+    EDITTEXT        IDD_DIALOG_ACCOUNT_PWD1,222,73,82,14,ES_AUTOHSCROLL
+    GROUPBOX        "密码修改",IDC_STATIC,168,32,149,136
+    GROUPBOX        "个人信息",IDC_STATIC,20,32,136,136
+    LTEXT           "姓名：",IDC_STATIC,34,73,27,8
+    EDITTEXT        IDD_DIALOG_ACCOUNT_NAME,69,73,67,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "用户名:",IDC_STATIC,34,122,30,8
+    LTEXT           "ID:",IDC_STATIC,34,96,18,9
+    EDITTEXT        IDD_DIALOG_ACCOUNT_ID,69,96,67,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDD_DIALOG_ACCOUNT_USER,69,122,67,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_RETURN DIALOGEX 0, 0, 164, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "还书"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "请输入书籍唯一编号",IDC_STATIC,19,15,114,61
+    EDITTEXT        IDC_EDIT1,29,41,101,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定还书",IDC_BUTTON1,98,75,50,14
+END
+
+IDD_BORROW DIALOGEX 0, 0, 164, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "借书"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "请输入书籍唯一编号",IDC_STATIC,19,15,114,61
+    EDITTEXT        1011,29,41,101,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定借阅",IDC_BUTTON1,98,75,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "New登陆.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "New登陆.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_STUDENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_Admin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_DIALOG_USERINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_DIALOG_RETURN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_LOANINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_BORROWHISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_BOOKINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_STDACCOUNTINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_DIALOG_ACCOUNTINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_RETURN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_BORROW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_USERINFO DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xd5d0, 0xfbc3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xa7d1, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 7, 0
+0xc3d3, 0xa7bb, 0xfbc3, "\000" 
+    0
+END
+
+IDD_DIALOG_SEARCH DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xe9ca, 0xaebc, 0xfbc3, 0xc6b3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x5349, 0x4e42, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xa8ce, 0xbbd2, 0xe0b1, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf7d7, 0xdfd5, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe0c0, 0xcdd0, "\000" 
+    0
+END
+
+IDD_DIALOG_RETURN DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 13, 0
+0xe9ca, 0xaebc, 0xa8ce, 0xbbd2, 0xe0b1, 0xc5ba, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xe8bd, 0xe9ca, 0xb1ca, 0xe4bc, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xb9bb, 0xe9ca, 0xb1ca, 0xe4bc, "\000" 
+    0
+END
+
+IDD_DIALOG_LOANINFO DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xe9ca, 0xaebc, 0xfbc3, 0xc6b3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x5349, 0x4e42, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xa8ce, 0xbbd2, 0xe0b1, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf7d7, 0xdfd5, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe0c0, 0xcdd0, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xd5d0, 0xfbc3, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xa7d1, 0xc5ba, "\000" 
+    IDC_COMBO2, 0x403, 7, 0
+0xc3d3, 0xa7bb, 0xfbc3, "\000" 
+    IDC_COMBO3, 0x403, 9, 0
+0xb9bb, 0xe9ca, 0xd5c8, 0xdac6, "\000" 
+    IDC_COMBO3, 0x403, 9, 0
+0xe8bd, 0xe9ca, 0xd5c8, 0xdac6, "\000" 
+    0
+END
+
+IDD_DIALOG_BORROWHISTORY DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 5, 0
+0x3177, 0x3177, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xa7d1, 0xc5ba, "\000" 
+    IDC_COMBO2, 0x403, 7, 0
+0xc3d3, 0xa7bb, 0xfbc3, "\000" 
+    0
+END
+
+IDD_DIALOG_BOOKINFO DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xe9ca, 0xaebc, 0xfbc3, 0xc6b3, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x5349, 0x4e42, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xa8ce, 0xbbd2, 0xe0b1, 0xc5ba, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xf7d7, 0xdfd5, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe0c0, 0xcdd0, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xe9ca, 0xaebc, 0xb4d7, 0xaccc, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 New登陆(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\New.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
